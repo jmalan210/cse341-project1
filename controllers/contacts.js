@@ -1,7 +1,6 @@
-const { ObjectId } = require('mongodb');
+const { ObjectId } = require('mongodb'); //primary key MongoDB creates
 
 const mongodb = require('../data/database');
-const objectId = require('mongodb').ObjectId; //primary key that MongoDB creates
 
 const getAll = async (req, res) => {
     const result = await mongodb
@@ -26,7 +25,7 @@ const getSingle = async (req, res) => {
         .findOne({ _id: contactId });
     
         res.setHeader('Content-Type', 'application/json');
-        res.status(200).json(contacts[0]);
+        res.status(200).json(result);
     
     };
 
