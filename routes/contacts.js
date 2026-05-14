@@ -1,3 +1,4 @@
+console.log("CONTACTS ROUTES LOADED");
 const express = require('express');
 const router = express.Router();
 
@@ -5,5 +6,16 @@ const contactsController = require('../controllers/contacts');
 
 router.get('/', contactsController.getAll);
 router.get('/:id', contactsController.getSingle);
+
+router.post('/', contactsController.createContact);
+
+router.post('/', (req, res) => {
+    console.log("POST ROUTE HIT");
+    res.send("route works");
+});
+
+router.put('/:id', contactsController.updateContact);
+
+router.delete('/:id', contactsController.deleteContact);
 
 module.exports = router;
