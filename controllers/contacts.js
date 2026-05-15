@@ -16,8 +16,6 @@ const getAll = async (req, res) => {
     
     };
 
-
-
 const getSingle = async (req, res) => {
     //#swagger.tags = ['Contacts'] 
     const contactId = new ObjectId(req.params.id)

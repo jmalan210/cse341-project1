@@ -7,12 +7,9 @@ const contactsController = require('../controllers/contacts');
 router.get('/', contactsController.getAll);
 router.get('/:id', contactsController.getSingle);
 
+
 router.post('/', contactsController.createContact);
 
-router.post('/', (req, res) => {
-    console.log("POST ROUTE HIT");
-    res.send("route works");
-});
 
 router.put('/:id', contactsController.updateContact);
 
