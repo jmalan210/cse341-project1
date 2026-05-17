@@ -8,30 +8,10 @@
   "servers": [
     
     {
-      "url": "cse341-project1-zmy6.onrender.com"
+      "url": "https://cse341-project1-zmy6.onrender.com"
     }
   ],
   "paths": {
-    "/": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
-      }
-    },
-    "/api-docs": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
-      }
-    },
     "/contacts/": {
       "get": {
         "tags": [
